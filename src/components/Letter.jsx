@@ -1,20 +1,17 @@
-import React, {useContext} from 'react';
-import {AppContext} from "../App";
-// import { boardDefault } from '../Words';
+import React, { useContext, useEffect } from "react";
+import { AppContext } from "../App";
 
-function Letter({letterPos, attemptVal}) {
-
-    // const board = useContext(AppContext);
-    // // console.log(board);
+function Letter({ letterPos, attemptVal }) {
+  const { board } =
+    useContext(AppContext);
     // const letter = board[attemptVal][letterPos];
-
-
+    const letter = board[[attemptVal],[letterPos]];
 
 
   return (
     <div className="letter">
-      {/* {letter} */}
-      A
+      {letter}
+     
     </div>
   );
 }
